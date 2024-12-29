@@ -39,16 +39,14 @@ export default function PaymentPage() {
             </div>
           </div>
           <div className="mb-6">
-            <h2 className="text-xl font-semibold mb-4">Scan QR Code to Pay</h2>
             <div className="bg-gray-200 w-64 h-64 mx-auto rounded-lg flex items-center justify-center">
             <Image
-                src="/qr.jpg"
-                alt="QR Code"
-                width={500}  // Replace with actual width
-                height={500} // Replace with actual height
-            />
+        src="/qr.jpg"
+        alt="QR Code"
+        width={500}  // Replace with actual width
+        height={500} // Replace with actual height
+      />
             </div>
-            <p className="text-center mt-2 text-sm text-gray-600">Scan this QR code with any UPI app to make the payment</p>
           </div>
           <Button 
             onClick={handlePaymentConfirmation} 

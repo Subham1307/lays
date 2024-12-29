@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className="container mx-auto p-4">
         <section className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-4">Cann't find Blue Lays ?</h2>
+          <h2 className="text-3xl font-bold mb-4">Can not find Blue Lays ?</h2>
           <p className="text-xl mb-4">We got your back</p>
           <p className="text-lg mb-4">Get your favorite chips from our store!</p>
         </section>
