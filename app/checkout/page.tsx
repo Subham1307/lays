@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { useCartContext } from '../context/cartContext'
+import Image from 'next/image'
 
 export default function PaymentPage() {
   const router = useRouter()
@@ -40,7 +41,12 @@ export default function PaymentPage() {
           <div className="mb-6">
             <h2 className="text-xl font-semibold mb-4">Scan QR Code to Pay</h2>
             <div className="bg-gray-200 w-64 h-64 mx-auto rounded-lg flex items-center justify-center">
-              <p className="text-gray-600 text-center">UPI QR Code Placeholder</p>
+            <Image
+                src="/qr.jpg"
+                alt="QR Code"
+                width={500}  // Replace with actual width
+                height={500} // Replace with actual height
+            />
             </div>
             <p className="text-center mt-2 text-sm text-gray-600">Scan this QR code with any UPI app to make the payment</p>
           </div>
